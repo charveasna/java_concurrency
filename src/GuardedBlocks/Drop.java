@@ -18,7 +18,7 @@ public class Drop {
 				// TODO: handle exception
 			}
 		}
-		
+		System.out.println("took ...");
 		// Toggle status.
 		empty = true;
 		
@@ -31,13 +31,13 @@ public class Drop {
 		// Wait until message has been retrieved.
 		while (!empty) {
 			try {
-				System.out.println("puting ..." + empty);
+				System.out.println("putting ..." + empty);
 				wait();
 			} catch (InterruptedException e) {
 				// TODO: handle exception
 			}
 		}
-		System.out.println("waiting ..." + empty);
+		System.out.println("put ..." + empty);
 		// Toggle status
 		empty = false;
 		
