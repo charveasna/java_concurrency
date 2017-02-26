@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import org.omg.CORBA.PRIVATE_MEMBER;
 
 public class Safelock {
-	static class Friend() {
+	static class Friend {
 		private final String name;
 		private final Lock lock = new ReentrantLock();
 		
@@ -67,7 +67,8 @@ public class Safelock {
 			this.bower = bower;
 			this.bowee = bowee;
 		}
-		
+
+		@Override
 		public void run() {
 			Random random = new Random();
 			for (;;) {
