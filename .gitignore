@@ -1,2 +1,3 @@
 # Ignore all  binfiles, logfiles and tempfiles.
 /bin/*
+blur*
