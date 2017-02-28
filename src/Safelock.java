@@ -34,12 +34,15 @@ public class Safelock {
 					}
 				}
 			}
+			System.out.println("myLock: " + myLock);
+			System.out.println("yourLock: " + yourLock);
+
 			return myLock && yourLock;
 		}
 		public void bow(Friend bower) {
 			if (implendingBow(bower)) {
 				try {
-					System.out.format("%s: %s has " + " bowed to me!%n", this.name, 
+					System.out.format("%s: %s has bowed to me!%n", this.name, 
 							bower.getName());
 					bower.bowBack(this);
 				} finally {
