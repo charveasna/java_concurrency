@@ -35,6 +35,5 @@ public class ForkBlur extends RecursiveAction {
 					| (((int)bt) << 0);
 			mDestination[index] = dpixel;
 		}
-		
 	}
 }
