@@ -76,7 +76,7 @@ class AtomicCounter {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		System.out.println(c.get());
+		System.out.println("Counter = " + c.get());
 	}
 
 }
