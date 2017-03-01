@@ -29,6 +29,14 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */ 
 
+/*
+ *  Synchronization is an acceptable solution. But for a more complicated 
+ *  class, we might want to avoid the liveness impact of unnecessary 
+ *  synchronization. Replacing the int field with an AtomicInteger allows 
+ *  us to prevent thread interference without resorting to synchronization, 
+ *  as in AtomicCounter:
+ */
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 class AtomicCounter {
